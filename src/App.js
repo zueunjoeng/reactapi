@@ -46,7 +46,8 @@ function App() {
               gnblist.map(( v, i)=>{
                  return(
                   <li key={v.wr_id} >
-                    <p onClick={()=>{ setView(v.gnblink)  }}>{ v.gnbnm }</p>
+                    <p onClick={()=>{ 
+                      setView(v.gnblink); pageSet('view');  }}>{ v.gnbnm }</p>
                     <button>수정</button><button>삭제</button>
                   </li>
                  )
